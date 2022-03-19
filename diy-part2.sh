@@ -38,3 +38,12 @@ sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-defaul
 find target/linux -path "target/linux/*/config-*" | xargs -i sed -i '$a CONFIG_ACPI=y\nCONFIG_X86_ACPI_CPUFREQ=y\n \
 CONFIG_NR_CPUS=128\nCONFIG_FAT_DEFAULT_IOCHARSET="utf8"' {}
 
+
+
+
+# 添加额外软件包 add passwall
+#git clone https://github.com/kenzok8/small ./package/other/small
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall ./package/other/luci-app-passwall
+#git clone https://github.com/kenzok8/openwrt-packages ./package/other/full
+#echo "-----------------------------------------------------"
+#echo
